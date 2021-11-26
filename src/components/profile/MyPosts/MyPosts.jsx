@@ -10,7 +10,7 @@ function MyPosts(props){
     return(
         <div>
             My posts
-            <NewPost/>
+            <NewPost addPost={props.addPost}/>
             <div>
                 {postElements}
             </div>

@@ -1,22 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { reRender } from './render';
 import reportWebVitals from './reportWebVitals';
-import state from "./data/data.js"
+import state from "./data/data"
 
 /* debugger */
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App 
-      posts={state.posts} 
-      dialogs={state.dialogs} 
-      messages={state.messages} 
-      />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+reRender(state)
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

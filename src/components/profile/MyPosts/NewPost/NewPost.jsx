@@ -1,11 +1,20 @@
-import react from "react";
+import React from "react";
 import s from "./NewPost.module.css"
 
-function NewPost(){
+function NewPost(props){
+
+    let newPostElement = React.createRef();
+
+    let addPost = () =>{
+        let text = newPostElement.current.value;
+        props.addPost(text);
+        newPostElement.current.value = "";
+    }
+
     return(
         <div>
-            <textarea></textarea>
-            <button>add post</button>
+            <textarea ref={newPostElement}></textarea>
+            <button onClick={addPost}>add post</button>
         </div>
     )
 }

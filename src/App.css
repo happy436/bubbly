@@ -11,14 +11,51 @@ body{
     background: linear-gradient(45deg, #8460ed, #ff1252);
 }
 
+.app-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+}
+
 .app-wrapper-content{
+    z-index: 3;
+    background-color: #fff;
+    min-height: 50vh;
+    max-height: 80vh;
+    width: 90vw;
+    position: absolute;
+    flex-direction: column;
     display: none;
-    grid-area: c;
-    background-color: aqua;
+    align-self: center;
+    justify-self: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 4px solid rgba(132,96,237,0.8);
+    -webkit-box-shadow: 0px 14px 21px 1px rgba(132,96,237, 0.2) inset;
+    -moz-box-shadow: 0px 14px 21px 1px rgba(132,96,237, 0.2) inset;
+    box-shadow: -8px -8px 15px rgb(255 255 255 / 5%), 20px 20px 20px rgb(0 0 0 / 30%), inset -8px -8px 15px rgb(255 255 255 / 5%), inset 20px 20px 20px rgb(0 0 0 / 30%);
 }
 
 .header{
     display:none;
     background-color: green;
 }
+
+.hide{
+    position: absolute;
+    right:20px;
+    color:#8460ed;
+}
+
+.hide:hover{
+    color:#ff1252;
+}
+
+.content{
+    overflow-y: scroll;
+    width: 100%;
+}
+
 

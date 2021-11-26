@@ -3,8 +3,8 @@ ul{
 }
 .menu{
     position:relative;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +12,10 @@ ul{
 
 .menu li{
     position: absolute;
-    left:-12px;
+    left:20px;
+    top:120px;
     list-style: none;
-    transform-origin: 100px;
+    transform-origin: 160px;
     transition: 0.5s;
     transition-delay: calc(0.1s * var(--i));
     transform: rotate(0deg) translateX(100px)
@@ -22,14 +23,14 @@ ul{
 
 .menu.active li{
     left:0;
-    top:80px;
+    top:120px;
     transform: rotate(calc(360deg / 5 * var(--i)))
 }
 
 .menu li a{
     background: #fff;
-    width: 40px;
-    height: 40px;
+    width:60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,22 +41,88 @@ ul{
     transition:0.5s;
 }
 
+a svg{
+    width:100%;
+    height:30px;
+}
+
 .menu li a:hover{
     color:#ff1252;
 }
 
 .toggle{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10000;
+    z-index: 2;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
     font-size: 2em;
     transition: transform 1.25s;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.toggle img{
+    width:270px;
+    
+}
+
+.swapIn {
+  -webkit-animation: swapIn 0.7s;
+  animation: swapIn 0.7s;
+}
+
+@-webkit-keyframes swapIn {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0) translate(-700px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+@keyframes swapIn {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0) translate(-700px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+.swapOut {
+    -webkit-animation: swapOut 0.7s;
+    animation: swapOut 0.7s;
+}
+
+@-webkit-keyframes swapOut {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1) translate(0px, 0px);
+        
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0, 0) translate(700px, 0px);
+    }
+}
+@keyframes swapOut {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1) translate(0px, 0px);
+        
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0, 0) translate(700px, 0px);
+    }
 }
