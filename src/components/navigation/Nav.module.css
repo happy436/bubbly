@@ -65,7 +65,7 @@ a svg{
     font-size: 2em;
     transition: transform 1.25s;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .toggle img{
