@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bubbly/static/css/main.ccd4260d.chunk.css",
-    "main.js": "/bubbly/static/js/main.67576725.chunk.js",
-    "main.js.map": "/bubbly/static/js/main.67576725.chunk.js.map",
+    "main.css": "/bubbly/static/css/main.3f2d2eda.chunk.css",
+    "main.js": "/bubbly/static/js/main.a5b69565.chunk.js",
+    "main.js.map": "/bubbly/static/js/main.a5b69565.chunk.js.map",
     "runtime-main.js": "/bubbly/static/js/runtime-main.f84246ce.js",
     "runtime-main.js.map": "/bubbly/static/js/runtime-main.f84246ce.js.map",
     "static/js/2.4ee2e234.chunk.js": "/bubbly/static/js/2.4ee2e234.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.01f7c505.chunk.js": "/bubbly/static/js/3.01f7c505.chunk.js",
     "static/js/3.01f7c505.chunk.js.map": "/bubbly/static/js/3.01f7c505.chunk.js.map",
     "index.html": "/bubbly/index.html",
-    "static/css/main.ccd4260d.chunk.css.map": "/bubbly/static/css/main.ccd4260d.chunk.css.map",
+    "static/css/main.3f2d2eda.chunk.css.map": "/bubbly/static/css/main.3f2d2eda.chunk.css.map",
     "static/js/2.4ee2e234.chunk.js.LICENSE.txt": "/bubbly/static/js/2.4ee2e234.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f84246ce.js",
     "static/js/2.4ee2e234.chunk.js",
-    "static/css/main.ccd4260d.chunk.css",
-    "static/js/main.67576725.chunk.js"
+    "static/css/main.3f2d2eda.chunk.css",
+    "static/js/main.a5b69565.chunk.js"
   ]
 }
