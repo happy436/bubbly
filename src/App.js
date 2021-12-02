@@ -1,6 +1,6 @@
 import "./App.css";
 import React from 'react';
-import { Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import Nav from "./components/navigation/Nav";
 import Profile from "./components/profile/Profile";
@@ -35,7 +35,6 @@ function App(props) {
     }
 
 	return (
-		
 			<div className="app-wrapper">
                 <Header/>
                 <Nav 
@@ -43,20 +42,21 @@ function App(props) {
 					showContent={showContent}
 				/>
 				<div className="app-wrapper-content" >
-					<div className="hide" onClick={hideContent}><UilTimesCircle/></div>
+					<NavLink className="hide" onClick={hideContent} to="/bubbly"><UilTimesCircle/></NavLink>
 					<div className="content">
 						<Routes>
 							<Route path="/bubbly/profile" element={<Profile 
 																		data={props.state.profilePage} 
-																		addPost={props.addPost}
+																		dispatch={props.dispatch}
 																	/>}/>
-							<Route path="/bubbly/messages" element={<Messages data={props.state.messagesPage}/>}/>
+							<Route path="/bubbly/messages" element={<Messages 
+                                                                        data={props.state.messagesPage}
+                                                                    />}/>
 							<Route path="/bubbly/music" element={<Music/>}/>
 							<Route path="/bubbly/news" element={<News/>}/>
 							<Route path="/bubbly/settings" element={<Settings/>}/>
 						</Routes>
 					</div>
-					
 				</div>
 			</div>
 		

@@ -11,12 +11,10 @@ function Nav(props){
         document.getElementsByClassName(s.menu)[0].classList.toggle(s.active)
     };
 
-
-
     return(
         <div className={s.menu}>
             <div className={s.toggle} onClick={toggleClass}>
-                <img src="https://s3.cdn.teleprogramma.pro/wp-content/uploads/2020/10/eb77e4164e70efbb52e007935ab57ec5.jpg"></img>
+                <img src="https://s3.cdn.teleprogramma.pro/wp-content/uploads/2020/10/eb77e4164e70efbb52e007935ab57ec5.jpg" alt=""></img>
             </div>
             <ul className={s.nav}>
                 <li className={s.item} style={{'--i':0}}>

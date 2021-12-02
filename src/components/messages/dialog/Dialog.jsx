@@ -6,7 +6,6 @@ function Dialog(props){
     let path = "/messages/" + props.id;
 
     return(
-        <withRouter>
             <div className={s.item}>
                 <NavLink 
                     className={({isActive}) => isActive ? `${s.active}` : {}}
@@ -14,7 +13,6 @@ function Dialog(props){
                     
                 >{props.name}</NavLink>
             </div>
-        </withRouter>
     )
 }
 
