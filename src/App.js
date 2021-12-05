@@ -5,11 +5,11 @@ import Header from "./components/header/Header";
 import Nav from "./components/navigation/Nav";
 import Profile from "./components/profile/Profile";
 import Music from "./components/music/Music";
-import Messages from "./components/messages/Messages";
 import News from "./components/news/News";
 import Settings from "./components/settings/Settings";
 import sNav from "./components/navigation/Nav.module.css"
 import {UilTimesCircle} from '@iconscout/react-unicons'
+import MessagesContainer from "./components/messages/MessagesContainer";
 
 
 function App(props) {
@@ -46,12 +46,10 @@ function App(props) {
 					<div className="content">
 						<Routes>
 							<Route path="/bubbly/profile" element={<Profile 
-																		data={props.state.profilePage} 
-																		dispatch={props.dispatch}
+																		store={props.store}
 																	/>}/>
-							<Route path="/bubbly/messages" element={<Messages 
-                                                                        data={props.state.messagesPage}
-                                                                        dispatch={props.dispatch}
+							<Route path="/bubbly/messages" element={<MessagesContainer
+                                                                        store={props.store}
                                                                     />}/>
 							<Route path="/bubbly/music" element={<Music/>}/>
 							<Route path="/bubbly/news" element={<News/>}/>
