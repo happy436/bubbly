@@ -1,5 +1,5 @@
 import reportWebVitals from './reportWebVitals';
-import store from "./data/data"
+import store from "./redux/redux-store"
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -23,6 +23,9 @@ let reRender = (state) => {
 }
 reRender(store.getState())
 
-store.subscribe(reRender)
+store.subscribe(() => {
+    let state = store.getState()
+    reRender(state);
+})
 
 reportWebVitals();

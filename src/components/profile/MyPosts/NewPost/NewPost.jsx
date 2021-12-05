@@ -1,5 +1,5 @@
 import React from "react";
-import { addPostActionCreator, updateNewPostTextActionCreator } from "../../../../data/data";
+import { addPostActionCreator, updateNewPostTextActionCreator } from "../../../../data/profileReducer";
 import s from "./NewPost.module.css"
 
 

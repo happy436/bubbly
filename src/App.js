@@ -51,6 +51,7 @@ function App(props) {
 																	/>}/>
 							<Route path="/bubbly/messages" element={<Messages 
                                                                         data={props.state.messagesPage}
+                                                                        dispatch={props.dispatch}
                                                                     />}/>
 							<Route path="/bubbly/music" element={<Music/>}/>
 							<Route path="/bubbly/news" element={<News/>}/>
